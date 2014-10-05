@@ -13,6 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	
+	UILocalNotification *localNot = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+	if(localNot)
+		[application cancelAllLocalNotifications];
+	
     return YES;
 }
 							

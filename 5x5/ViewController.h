@@ -10,4 +10,15 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)About:(id)sender;
+- (IBAction)HowTo:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *Cover6x6;
+@property (weak, nonatomic) IBOutlet UIButton *Cover5x5;
+
+- (IBAction)Cover5x5:(id)sender;
+- (IBAction)Cover6x6:(id)sender;
+
+
+
 @end
